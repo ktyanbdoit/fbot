@@ -368,6 +368,5 @@ def log(message):  # simple wrapper for logging to stdout on heroku
 
 
 if __name__ == '__main__':
-    app.run(host=config.WEBHOOK_LISTEN, port=config.WEBHOOK_PORT,
-            ssl_context=(config.WEBHOOK_SSL_CHAIN, config.WEBHOOK_SSL_PRIV))
+    app.run(host=config.WEBHOOK_LISTEN, port=config.WEBHOOK_PORT)
 
